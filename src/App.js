@@ -1,6 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
-/* Example 1, props, passing like parameters, html attribute syntax
+import ProductPage from './ProductPage';
+/* 
+//Example 1, props, passing like parameters, html attribute syntax
+
 const App = () => {
   let userDetails = {
     name: "Jimmy B",
@@ -19,6 +21,9 @@ const User = (props) => {
   )
 }
 */
+
+/*
+// Example2, multiple props
 
 const App = () => {
   let userDetails = {
@@ -41,27 +46,14 @@ const User = (props) => {
 }
 
 export default App;
+*/
 
+function App() {
+  return (
+    <div>
+      < ProductPage />
+    </div>
+  )
+}
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
+export default App
